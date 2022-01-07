@@ -1,33 +1,288 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
 /* GLOBAL */
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: 'Bebas Neue', display;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 500;
 }
+
 
 /* CONTAINER */
+
 .container {
-  max-width: 1260px;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1260px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
 /* MAIN CONTENT */
+
 .main-content {
-  flex-grow: 1;
+    flex-grow: 1;
+}
+
+.site-header {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    text-decoration: none;
+    color: #444;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.site-logo span {
+    color: #ff1b36;
+}
+
+.site-nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav-item {
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+.site-nav-item:first-child {
+    margin-left: 0;
+}
+
+.site-nav-link {
+    text-decoration: none;
+    color: #444;
+    transition: 300ms ease-in;
+}
+
+.site-nav-link:hover {
+    color: #ff1b36;
+}
+
+.my-works {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+.works-list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.works-item {
+    list-style-type: none;
+    margin-top: 20px;
+    border: 2px solid;
+    width: 250px;
+    padding: 16px 8px;
+    transition: 300ms ease;
+    text-align: center;
+}
+
+.works-item:hover {
+    box-shadow: 10px 3px 20px -2px rgba(0, 0, 0, 0.77);
+}
+
+.works-item:first-child {
+    margin-top: 0;
+}
+
+.work-link {
+    text-decoration: none;
+    color: #444;
+}
+
+.landing-title {
+    text-align: center;
+    color: #666;
+    margin-bottom: 80px;
+}
+
+.landings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-text {}
+
+.text-title {}
+
+.lorem {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #666;
+}
+
+.images-section {
+    margin-right: 50px;
+}
+
+.technologies {
+    padding-top: 80px;
+    letter-spacing: 2px;
+}
+
+.tech-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tech-item {
+    list-style-type: none;
+    color: #555;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    transition: 450ms ease;
+}
+
+.tech-item:hover {
+    color: #ff1b36;
+}
+
+.item-title {
+    margin: 0;
+}
+
+.telegram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.tg-texts {
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.tg-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.tg-img {
+    margin-left: 50px;
+}
+
+.contact-title {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 50pxs;
+}
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-item {
+    list-style-type: none;
+}
+
+.social-link,
+.tel {
+    text-decoration: none;
+    color: #666;
+    transition: 250ms ease-in-out;
+}
+
+.tel {
+    margin-left: 400px;
+}
+
+.social-link:hover,
+.tel:hover {
+    color: #ff1b36;
+}
+
+.site-footer {
+    border-top: 2px solid #666;
+    background-color: rgba(238, 231, 231, 0.918);
+    padding: 40px;
+}
+
+.foolter-div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-nav-item {
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.footer-nav-item:last-child {
+    margin-right: 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #444;
+    display: inline-block;
+    transition: 350ms ease;
+}
+
+.footer-link:hover {
+    color: #ff1b36;
+}
+
+.copy {
+    text-align: center;
+    color: #444;
+    margin-top: 60px;
 }
