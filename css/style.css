@@ -47,7 +47,7 @@ body {
     padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .site-logo {
@@ -56,6 +56,7 @@ body {
     line-height: 30px;
     letter-spacing: 2px;
     font-size: 50px;
+    margin-left: 20px;
 }
 
 .site-logo span {
@@ -65,6 +66,7 @@ body {
 .site-nav-list {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .site-nav-item {
@@ -128,15 +130,16 @@ body {
     margin-bottom: 80px;
 }
 
+.landing-text {
+    width: 40%;
+}
+
 .landings {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-.landing-text {}
-
-.text-title {}
 
 .lorem {
     font-size: 16px;
@@ -147,6 +150,7 @@ body {
 
 .images-section {
     margin-right: 50px;
+    width: 50%;
 }
 
 .technologies {
@@ -163,6 +167,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .tech-item {
@@ -187,9 +192,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
+    flex-wrap: wrap;
 }
 
 .tg-texts {
+    width: 40%;
     letter-spacing: 1px;
     font-weight: 400;
 }
@@ -220,6 +227,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .social-item {
@@ -251,6 +259,7 @@ body {
 .foolter-div {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-nav {
@@ -258,6 +267,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .footer-nav-item {
@@ -285,4 +295,48 @@ body {
     text-align: center;
     color: #444;
     margin-top: 60px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.mobila-navs {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .burger {
+        display: block;
+    }
+    .my-works {
+        display: none;
+    }
+    .site-nav-list {
+        margin-right: auto;
+    }
+    .images-section {
+        max-width: 500px;
+    }
+    .telegram {
+        padding-left: 5px;
+        margin: 0;
+        width: 500px;
+    }
+    .tel {
+        margin-left: 30px;
+    }
+    .landing-text {
+        width: 500px;
+        padding: 0%;
+    }
+    .tech-list {
+        padding-left: 15px;
+    }
+    .tg-texts {
+        width: 500px;
+    }
 }
