@@ -308,7 +308,15 @@ body {
     display: none;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:400px) {
+    .mini-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 393px;
+    }
+    body {
+        text-align: center;
+    }
     .burger {
         display: block;
     }
@@ -318,25 +326,32 @@ body {
     .site-nav-list {
         margin-right: auto;
     }
-    .images-section {
-        max-width: 500px;
+    .images-section img {
+        max-width: 350px;
     }
     .telegram {
         padding-left: 5px;
         margin: 0;
-        width: 500px;
+        width: 350px;
+    }
+    .tg-img img {
+        max-width: 350px;
     }
     .tel {
         margin-left: 30px;
     }
     .landing-text {
-        width: 500px;
+        width: 350px;
         padding: 0%;
     }
     .tech-list {
         padding-left: 15px;
     }
     .tg-texts {
-        width: 500px;
+        width: 350px;
+        text-align: center;
+    }
+    .footer-logo {
+        margin-left: 5px;
     }
 }
