@@ -1,17 +1,20 @@
-// const burger = document.querySelector('.burger')
-// const brackdrop = document.querySelector('.brackdrop')
+const toggle = document.getElementById("toggle");
+const projectList = document.querySelector(".project-list");
+const brackdrop = document.querySelector(".brackdrop");
+toggle.addEventListener("click", function () {
+  projectList.classList.toggle("active");
+  toggle.classList.toggle("active");
+});
+document.addEventListener("click", function (e) {
+  if (e.target.id !== "project-list" && e.target.id !== "toggle") {
+    projectList.classList.remove("active");
+    toggle.classList.remove("active");
+  }
+});
 
-// let mobile = document.querySelector('.mobila-navs')
-// burger.addEventListener('click', () => {
-//     mobile.classList.remove('none')
-//     document.body.classList.add('brackdrop')
-
-// })
-
-// brackdrop.addEventListener('click', () => {
-//     brackdrop.style.display = 'none'
-//     mobile.classList.add('none')
-//     console.log(brackdrop);
-// })
-
-// console.log(brackdrop);
+document.addEventListener("scroll", function (e) {
+    if (e.target.id !== "project-list" && e.target.id !== "toggle") {
+      projectList.classList.remove("active");
+      toggle.classList.remove("active");
+    }
+  });
