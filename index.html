@@ -16,100 +16,95 @@
 </head>
 
 <body>
-    <header class="site-header container mini-container">
-        <button class="burger"><i class="fas fa-bars"></i></button>
-        <a href="#" class="site-logo">Future<span>Coders</span></a>
-        <ul class="site-nav-list">
-            <li class="site-nav-item"><a href="#" class="site-nav-link">Home</a></li>
-            <li class="site-nav-item"><a href="#" class="site-nav-link">About me</a></li>
-            <li class="site-nav-item"><a href="#contact" id="contact" class="site-nav-link">Contacts</a></li>
+    <header class="header">
+        <!-- <button class="burger"><i class="fas fa-bars"></i></button> -->
+        <div class="logo">
+            <h3 class="logo-text">Future<span>Coders</span></h3>
+        </div>
+        <ul class="navigation">
+            <li><a href="#" class="nav-link ok">Home</a></li>
+            <li><a href="#" class="nav-link">About me</a></li>
+            <li><a href="#contact" class="nav-link">Contacts</a></li>
         </ul>
+        <div class="toggle" id="toggle"></div>
     </header>
+
     <main class="main-content">
-        <section class="my-works">
-            <ul class="works-list">
-                <li class="works-item"><a href="https://gradient-generator-ja.netlify.app/" class="work-link">Gradient generator</a></li>
-                <li class="works-item"><a href="https://ja-n24.netlify.app/index.html" class="work-link">Namanganliklar24</a></li>
-                <li class="works-item"><a href="http://fayz-baliqxonasi.netlify.app/" class="work-link">Fayz</a></li>
-                <li class="works-item"><a href="https://sinaw-ja.netlify.app/" class="work-link">Sinaw</a></li>
-                <li class="works-item"><a href="https://sheraton-hotels.netlify.app/" class="work-link">Shearaton hotels</a></li>
-                <li class="works-item"><a href="https://animation-navbar.netlify.app/#" class="work-link">Animation navbar</a></li>
-                <li class="works-item"><a href="https://bmi-calculator-ja.netlify.app/" class="work-link">BMI calculator</a></li>
-                <li class="works-item"><a href="https://logoipsum-ja.netlify.app/" class="work-link">LogoIpsum</a></li>
-            </ul>
-            <div class="brackdrop"></div>
-            <div class="mobila-navs none">
-                <ul class="works-list">
-                    <li class="works-item"><a href="https://gradient-generator-ja.netlify.app/" class="work-link mobile-link">Gradient generator</a></li>
-                    <li class="works-item"><a href="https://ja-n24.netlify.app/index.html" class="work-link mobile-link">Namanganliklar24</a></li>
-                    <li class="works-item"><a href="http://fayz-baliqxonasi.netlify.app/" class="work-link">Fayz</a></li>
-                    <li class="works-item"><a href="https://sinaw-ja.netlify.app/" class="work-link mobile-link">Sinaw</a></li>
-                    <li class="works-item"><a href="https://sheraton-hotels.netlify.app/" class="work-link mobile-link">Shearaton hotels</a></li>
-                    <li class="works-item"><a href="https://animation-navbar.netlify.app/#" class="work-link mobile-link">Animation navbar</a></li>
-                    <li class="works-item"><a href="https://bmi-calculator-ja.netlify.app/" class="work-link mobile-link">BMI calculator</a></li>
-                    <li class="works-item"><a href="https://logoipsum-ja.netlify.app/" class="work-link mobile-link">LogoIpsum</a></li>
+        <section class="intro">
+            <aside class="projects">
+                <ul class="project-list">
+                    <li class="project-item"><a href="https://gradient-generator-ja.netlify.app/" class="project-link">Gradient generator</a></li>
+                    <li class="project-item"><a href="https://ja-n24.netlify.app/index.html" class="project-link">Namanganliklar24</a></li>
+                    <li class="project-item"><a href="https://sinaw-ja.netlify.app/" class="project-link">Sinaw</a></li>
+                    <li class="project-item"><a href="https://sheraton-hotels.netlify.app/" class="project-link">Shearaton hotels</a></li>
+                    <li class="project-item"><a href="https://animation-navbar.netlify.app/#" class="project-link">Animation navbar</a></li>
+                    <li class="project-item"><a href="https://bmi-calculator-ja.netlify.app/" class="project-link">BMI calculator</a></li>
+                    <li class="project-item"><a href="https://logoipsum-ja.netlify.app/" class="project-link">LogoIpsum</a></li>
                 </ul>
-            </div>
-        </section>
-        <section class="landing ">
-            <h2 class="landing-title">
-                Jakhongirbek Alijonov
-            </h2>
-            <div class="landings">
-                <div class="landing-text container">
-                    <span class="text-title">Assalomu alaykum!</span>
-                    <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, deserunt exercitationem. Ullam esse blanditiis facere qui doloribus atque aut accusantium eveniet aspernatur perferendis cum, ipsa libero eum neque, quasi dolorum ratione
-                        odit nihil a ipsam dolorem temporibus? Esse itaque fuga consectetur, culpa ea iusto animi iure ullam sunt amet architecto?</p>
+                <div class="backdrop hidden"></div>
+            </aside>
+
+            <div class="landing">
+                <h2 class="landing-title">
+                    Jakhongirbek Alijonov
+                </h2>
+                <div class="landing-box">
+                    <div class="landing-text">
+                        <h3 class="text-title">Assalomu alaykum!</h3>
+                        <p class="lorem">
+                            Men Alijonov Jaxongirbek , 2002- yil Farg'ona viloyati Farg'ona shahrida tug'ilganman. Yoshim 19 da va hozirda Farg'ona Politexnika Institutida Transport vositalari muhandisligi yo'nalishida 2-kurs sirtqi ta'limda o'qiyman. Undan tashaqari web dasturlashga
+                            qiziqishim tufayli Avgust oyidan buyon web dasturlashni o'rganib kelyapman. Men yaratgan ishlarimni ko'rishingiz mumkin.
+                        </p>
+                    </div>
+                    <div class="landing-image">
+                        <img src="./images/html-css.svg" width="550" alt="html css">
+                    </div>
                 </div>
-                <div class="images-section">
-                    <img src="./images/html-css.svg" width="550" alt="html css">
-                </div>
             </div>
+
         </section>
         <section class="technologies">
             <h2 class="tech-title">
-                technologies
+                Technologies
             </h2>
             <ul class="tech-list">
                 <li class="tech-item">
                     <h3 class="item-title">HTML</h3>
-                    <img src="./images/progress-overall-100.png" width="150" alt="Html skill">
+                    <progress value="90" max="100"></progress>
                 </li>
                 <li class="tech-item">
                     <h3 class="item-title">CSS</h3>
-                    <img src="./images/progress-overall-75.png" width="150" alt="Html skill">
+                    <progress value="75" max="100"></progress>
                 </li>
                 <li class="tech-item">
                     <h3 class="item-title">JavaScript</h3>
-                    <img src="./images/progress-overall-25.png" width="150" alt="Html skill">
+                    <progress max="100" value="40"></progress>
                 </li>
                 <li class="tech-item">
                     <h3 class="item-title">Figma</h3>
-                    <img src="./images/progress-overall-50.png" width="150" alt="Html skill">
+                    <progress value="48" max="100"></progress>
                 </li>
             </ul>
         </section>
-        <section class="telegram container mini-container">
-            <div class="tg-texts">
-                <h4 class="tg-title">SMM dan ham oz-moz xabarim bor 😄</h4>
-                <p class="tg-text">
+        <section class="social-media">
+            <div class="text-content">
+                <h3 class="smm">SMM dan ham oz-moz xabarim bor 😄</h3>
+                <p class="smm-activity">
                     Nega bunday deyayotganimning sababi web dasturlash bo'yicha Telegramda 100 dan oshiq obunachiga ega <a href="https://t.me/frontend_project">Frontend Project</a> kanali admini va Fayz choyxonasining barcha ijtimoiy tarmoqlardagi va
                     internet sahifalaridagi accountlarini yuritaman. <br>
                     <b>Albatta hammasi asta-asta rivojlanmoqda</b>
                 </p>
             </div>
-            <div class="tg-img">
+            <div class="image-content">
                 <img src="./images/proud.svg" width="550" alt="proud">
             </div>
         </section>
-        <section id="contact " class="contact  container mini-container">
+        <section id="contact" class="contact">
             <h2 class="contact-title">
                 Men bilan bog'lanish juda oson
-
             </h2>
-            <ul class="socials-list ">
+            <ul class="socials-list">
                 <li class="social-item">
-
                     <a href="https://instagram.com/jakhongirbek_alijonov" class="social-link">
                         <i class="fab fa-instagram"></i> Instagram
                     </a>
@@ -135,13 +130,12 @@
                     </a>
                 </li>
             </ul>
-            <a href="tel:+998906301169" class="tel">Telefon raqam: +998906301169</a>
+            <p class="tel">Telefon raqam: +998906301169</p>
         </section>
-
     </main>
-    <footer class="site-footer  ">
-        <div class="foolter-div container mini-container">
-            <a href="#" class="site-logo footer-logo">Future<span>Coders</span></a>
+    <footer class="footer">
+        <div class="foolter-top">
+            <h3 class="logo-text footer-logo">Future<span>Coders</span></h3>
 
             <ul class="footer-nav">
                 <li class="footer-nav-item"><a href="#" class="footer-link">Cookies</a></li>
@@ -149,10 +143,9 @@
                 <li class="footer-nav-item"><a href="https://t.me/frontend_project_muhokama" class="footer-link">Our group</a></li>
             </ul>
         </div>
-        <p class="copy container mini-container">
+        <p class="copy">
             All rights reserved. &copy FutureCoders team. Fergana 2022
         </p>
-
     </footer>
     <!-- JAVASCRIPT -->
     <script src="js/main.js"></script>
